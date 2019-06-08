@@ -1,0 +1,16 @@
+<div (clickOutside)="onClickedOutside()">
+  <div class=" has-search">
+    <span class="fas fa-search fa-2x form-control-feedback"></span>
+    <input class="form-control search-bar" [(ngModel)]="searchText" type="search" placeholder="Search books"
+      aria-label="Search books" (click)="onClickedInside()">
+  </div>
+
+  <ul class="search-results" *ngIf="clickedOutside">
+    <li class="search-item" *ngFor="let book of books | filter:searchText">
+      <a [routerLink]="['/books', book.name]" (click)="onClickedOutside()">
+        <img class="search-img" src="{{ book.image }}" alt="{{ updateName(book.name) }}">
+        <span>{{ updateTitle(book.title) }}</span>
+      </a>
+    </li>
+  </ul>
+</div>
