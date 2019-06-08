@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Courier';
+    font-size: 18px;
+}
+
+section {
+    margin: 0 auto -4rem;
+    padding: 4rem 3rem 4rem;
+    width: 80%;
+}
+
+h1 {
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+a {
+    color: darkslategrey;
+}
+
+a:hover {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+}
