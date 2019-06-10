@@ -14,6 +14,7 @@ import { BookService } from './services/book.service';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { BookComponent } from './components/book/book.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './components/about/about.component';
     SearchComponent,
     FilterPipe,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<main role="main" class="container-fluid">
+  <h1 class="text-center">{{ book?.title }}</h1>
+  <div class="row">
+    <div class="col-lg-3 col-auto">
+      <img src="{{ book?.image_filename }}" alt="{{ book?.title }}">
+    </div>
+    <div class="col-lg-9 col-auto">
+      <p>{{ book?.author }}</p>
+      <p>{{ book?.price }}</p>
+      <p>{{ book?.category }}</p>
+      <p>{{ book?.year }}</p>
+      <p>{{ book?.description }}</p>
+    </div>
+  </div>
+</main>
