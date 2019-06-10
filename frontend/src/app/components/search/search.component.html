@@ -7,9 +7,8 @@
 
   <ul class="search-results" *ngIf="clickedOutside">
     <li class="search-item" *ngFor="let book of books | filter:searchText">
-      <a [routerLink]="['/books', book.name]" (click)="onClickedOutside()">
-        <img class="search-img" src="{{ book.image }}" alt="{{ updateName(book.name) }}">
-        <span>{{ updateTitle(book.title) }}</span>
+      <a [routerLink]="['/books', book.id]" (click)="onClickedOutside()">
+        <span>{{ book.title }}</span>
       </a>
     </li>
   </ul>

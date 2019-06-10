@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IBook } from 'src/app/services/book.service';
-import { BookService } from 'src/app/services/book.service';
+import { BookService, IBook } from 'src/app/services/book.service';
 
 @Component({
   selector: 'app-search',
@@ -20,10 +19,6 @@ export class SearchComponent implements OnInit {
     });
   }
 
-  updateTitle(title: string): string {
-    return this.bs.editTitle(title);
-  }
-
   onClickedInside() {
     this.clickedOutside = true;
   }
@@ -31,4 +26,5 @@ export class SearchComponent implements OnInit {
   onClickedOutside() {
     this.clickedOutside = false;
   }
+
 }

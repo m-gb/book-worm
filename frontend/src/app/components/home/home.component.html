@@ -1,12 +1,12 @@
 <main role="main" class="container-fluid">
-  <h1>Books</h1>
+  <h1 class="text-center">Books</h1>
   <div class="row" style="justify-content: center">
     <div class="col-lg-auto col-auto" *ngFor="let book of books">
-      <a [routerLink]="['/books', book.title]">
+      <a [routerLink]="['/books', book.id]">
         <div class="img">
-          <img class="img-fluid" src="{{ book.image_filename }}" alt="{{ updateTitle(book.title) }}">
+          <img class="img-fluid" src="{{ book.image_filename }}" alt="{{ book.title }}">
         </div>
-        <p class="text-center">{{ updateTitle(book.title) }}</p>
+        <p class="book-title">{{ book.title }}</p>
       </a>
     </div>
   </div>
