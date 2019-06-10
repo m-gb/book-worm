@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { BookService, IBook, addUnderscoresToTitle } from 'src/app/services/book.service';
+import { BookService, IBook } from 'src/app/services/book.service';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,4 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  updateTitle(title: string) {
-    return addUnderscoresToTitle(title);
-  }
 }
