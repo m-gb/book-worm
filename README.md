@@ -1,10 +1,10 @@
-# Book Worm
+# Book Worm :books:
 ## Description
 This web application is an ongoing project for an online book store called Book Worm.
 
 It's designed as a microservice:
 - using a PHP Laravel backend API to retrieve the books from a MySQL database. 
-- using an Angular 7 frontend written with Typescript and Bootstrap to display the books.
+- using an Angular frontend written with Typescript and Bootstrap to display the books.
 
 The search function uses a pipe to dynamically display a list of books matching the user's input.
 
